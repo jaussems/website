@@ -1,38 +1,627 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+  max-width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* a:visited {
+  color: rgb(5, 5, 5);
+}
+
+img {
+  max-height: 60em;
+  display: block;
+}
+
+.Navigation {
+  display: inline;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.Navigation ul {
+  list-style-type: none;
+  gap: 6px;
+  color: black;
+}
+
+.Navigation li {
+  color: black;
+  float: left;
+  width: 6em;
+}
+
+.Navigation li a:hover {
+  text-decoration: underline;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.Navigation li:last-child {
+  float: right;
+  margin-top: -0.5%;
+  color: rgb(226, 21, 253);
+}
+
+.backgroundImg {
+  width: 70%;
+  margin: 0 auto;
+  z-index: auto;
+}
+
+.area1 {
+  display: inline-block;
+  z-index: 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 50em;
+  background-color: rgb(228, 228, 210);
+  position: relative;
+  text-align: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.area1-backgroundbox {
+  z-index: 1;
+  left: 0;
+  top: 13.5%;
+  background: center / contain no-repeat url("./JWTImg1.jpg");
+  background-size: cover;
+  margin-left: 10em;
+  width: 80%;
+  height: 80%;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+  color: #ecf0f1;
+}
+.contentcontainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+
+.MyStory {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  gap: 2em;
+  margin: 0 auto;
+  padding-top: 1em;
+}
+
+.Mystorybox {
+  display: flex;
+  flex-direction: row;
+  margin-left: -25em;
+}
+.Mystorytext {
+  /* inline-size: 44rem; */
+  inline-size: 40vw;
+  overflow-wrap: break-word;
+}
+.secondImg {
+  border-radius: 99px;
+  height: 40em;
+}
+
+.MyStorybadges {
+  display: flex;
+  justify-content: safe center;
+  margin: 1em;
+  gap: 1.2em;
+}
+
+.MyStorybadges a:nth-child(-n + 2) {
+  margin-top: 1.5%;
+}
+
+.dwnldbtn {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.dwnldbtn:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+
+.Skills {
+  background: -webkit-linear-gradient(
+    45deg,
+    #ffffff 0%,
+    #f1f1f1 50%,
+    #e1e1e1 51%,
+    #f6f6f6 100%
+  );
+  padding: 2px;
+  text-align: center;
+  margin: 0 auto;
+  height: auto;
+}
+
+.Skills img {
+  height: 2em;
+  margin-top: 0.55em;
+  width: 2em;
+}
+
+.skillmeasure {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1.5em;
+  /* justify-content: space-between; */
+}
+
+.skillmeasure-position {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillcircle {
+  border: 2px solid black;
+  width: 15px;
+  height: 15px;
+  border-radius: 99px;
+}
+
+.skillcircle2 {
+  border: 2px solid black;
+  background-color: rgb(10, 10, 0);
+  width: 15px;
+  height: 15px;
+  border-radius: 99px;
+}
+
+.skillcircle3 {
+  border: 2px solid black;
+  background: linear-gradient(
+    -90deg,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255) 50%,
+    white 50%,
+    white 50%,
+    rgb(0, 0, 0) 50%
+  );
+  width: 15px;
+  height: 15px;
+  border-radius: 99px;
+}
+
+.skills-list {
+  list-style-type: none;
+  max-width: 100vw;
+  font-size: 2em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2px;
+}
+
+/* ul {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+} */
+
+.skill {
+  display: flex;
+  flex-direction: row;
+  width: 12em;
+  justify-content: space-between;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.skill p {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.skillspt1 {
+  float: left;
+  justify-content: space-evenly;
+}
+
+.skillspt2 {
+  float: right;
+  justify-content: space-evenly;
+}
+
+.Contactme {
+  background: -webkit-radial-gradient(
+    center,
+    ellipse cover,
+    #f2f9fe 0%,
+    #d6f0fd 100%
+  );
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Contactme button {
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.content-animation-div {
+  font-size: 4.5vw;
+}
+.Contactme button:hover {
+  background-color: white;
+  color: black;
+  text-decoration: underline;
+}
+.inputgap {
+  height: 3em;
+}
+
+.Contactme input {
+  outline: none;
+  width: 70%;
+  border: 0px transparent white;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+.Portfolio {
+  background: -webkit-linear-gradient(
+    -45deg,
+    #f2f6f8 0%,
+    #d8e1e7 50%,
+    #b5c6d0 70%,
+    #e0eff9 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+  margin: 0 auto;
+}
+
+.icons {
+  width: 5em;
+  display: flex;
+  margin: 0 auto;
+  height: 5em;
+}
+.Portfolio a:hover,
+.Portfolio .icons:hover {
+  text-decoration: underline;
+  font-size: 1.5em;
+  width: 5.15em;
+  height: 5.15em;
+}
+
+.area5 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 720px) {
+  html {
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+
+  body {
+    font-size: 6.5vw;
+    overflow-y: scroll;
+    overflow-x: unset;
+    justify-content: safe center;
+    margin: 0 auto;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .area1 {
+    width: 100vw;
+    background-position: center;
+  }
+
+  .area1-backgroundbox {
+    justify-content: center;
+    background-position: 70%;
+    margin: 0 auto 0;
+    width: 100vw;
+  }
+  .MyStory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .Mystorytext {
+    padding-top: 2em;
+    text-overflow: ellipsis;
+    text-align: center;
+    white-space: pre-line;
+  }
+  .Navigation {
+    display: block;
+    z-index: 1;
+    min-height: 2em;
+    min-width: max-content;
+    min-width: 100vw;
+    padding: 0;
+  }
+
+  .Navigation ul {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25em;
+  }
+
+  .Navigation li {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .menu-list-items {
+    display: none;
+    visibility: hidden;
+    float: zero;
+    transition: all 0.5s ease;
+
+    padding: 0;
+    font-size: 1.5em;
+  }
+
+  .menu-list-items-active {
+    display: flex;
+    visibility: visible;
+    flex-direction: column;
+    flex-wrap: wrap;
+    transform: translate(0);
+    float: zero;
+    overflow: visible;
+    padding: 0;
+    font-size: 1.5em;
+  }
+  .menu-list-items-active li {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  .menu-list-items-active li:hover {
+    background-color: azure;
+  }
+
+  .Navigation li:last-child {
+    float: zero;
+    justify-content: center;
+  }
+
+  .menu-btn {
+    display: block;
+    margin-top: -1em;
+    text-align: justify;
+  }
+
+  .menu-btn a {
+    text-align: center;
+    float: right;
+    margin: -0.25 auto 0;
+    color: black;
+  }
+
+  .Navigation li {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .secondImg {
+    border-radius: 99px;
+    height: auto;
+    max-width: 320px;
+  }
+
+  .Mystorytext {
+    inline-size: 320px;
+    position: relative;
+  }
+
+  .Skills {
+    display: block;
+    height: auto;
+  }
+
+  .skill {
+    display: flex;
+    flex-direction: row;
+    margin-left: -15vw;
+    font-size: 8vw;
+    width: 85vw;
+  }
+
+  .skill p {
+    display: block;
+    margin: 1em;
+    justify-self: left;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  .Portfolio a:hover,
+  .Portfolio .icons:hover {
+    text-decoration: underline;
+  }
+  
+  /* .skill p {
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+  } */
+}
+
+/* .body div {
+    max-width: 100%;
+  } */
+/* 
+  .area2 {
+    display: flex;
+    text-align: justify;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: max-content;
+  } */
+@media only screen and (min-width: 700px) and (max-width: 900px) {
+  html {
+    width: 100%;
+  }
+
+  body {
+    font-size: 3vw;
+  }
+  .area1 {
+    box-sizing: border-box;
+    background-position: 100%;
+  }
+
+  .area1-backgroundbox {
+    justify-content: center;
+    background-position: 70%;
+    margin: 0 auto 0;
+    width: 100%;
+  }
+  .MyStory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .Mystorytext {
+    /* text-indent: 2vw;
+    margin: 0 auto; */
+    font-size: 4.5vw;
+    inline-size: 80vw;
+    overflow-wrap: break-word;
+  }
+  .Skills {
+    display: block;
+    height: auto;
   }
 }
+
+/* @media (min-width: 300px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .area1 {
+    display: flex;
+    background: cyan;
+    width: 102vh;
+  }
+} */
+
+/* @media only screen and (min-width: 720px) {
+  html {
+    width: 100%;
+  }
+
+  body {
+    font-size: 2.5vw;
+    overflow-y: scroll;
+    overflow-x: unset;
+    margin: 0 auto;
+    padding: 0;
+    white-space: nowrap;
+  }
+  .area1 {
+    width: 100%;
+    background-position: center;
+  }
+
+  .area1-backgroundbox {
+    justify-content: center;
+    background-position: 70%;
+    margin: 0 auto 0;
+
+    width: 100%;
+  }
+  .MyStory {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .Mystorytext {
+    padding-top: 2em;
+    text-overflow: ellipsis;
+    text-align: center;
+    white-space: pre-line;
+  }
+} */
