@@ -7,6 +7,7 @@ function Portfolio() {
       <div>
         <a href="https://see-crypto-app.netlify.app/">
           <img
+            alt="icon"
             className="icons"
             src="https://image.flaticon.com/icons/png/512/991/991959.png"
           />
@@ -16,6 +17,7 @@ function Portfolio() {
       <div>
         <a href="https://walking-tour.netlify.app/">
           <img
+            alt="icon"
             className="icons"
             src="https://icons.iconarchive.com/icons/icons8/windows-8/512/Sports-Walking-icon.png"
           />
