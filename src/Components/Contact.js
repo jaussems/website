@@ -1,23 +1,20 @@
 import React, { useState } from "react";
-import Captcha from "./captcha";
+
+import axios from "axios";
 function Contact() {
   const [contactname, setContactName] = useState("");
   const [contactmessage, setContactMessage] = useState("");
 
   function SendMessage(event) {
     console.log({ name: contactname, message: contactmessage });
-
+    axios.post("https://formsubmit.co/ad151bf8937fd838695d488d2dd37fc3", {
+      contactname,
+      contactmessage,
+    });
     event.preventDefault();
     setContactName("");
     setContactMessage("");
   }
-
-  //   <script
-  //   src="https://vivirenremoto.github.io/doomcaptcha/script.js?version=16"
-  //   countdown="on"
-  //   label="Captcha"
-  //   enemies="4"
-  // ></script>
 
   return (
     <div className="Contactme">
@@ -40,7 +37,6 @@ function Contact() {
         <div className="inputgap"></div>
         <button onClick={SendMessage}>contact me </button>
       </form>
-      {Captcha};
     </div>
   );
 }

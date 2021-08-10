@@ -11,9 +11,12 @@
   margin: 0 auto;
   padding: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * a {
   text-decoration: none;
+  color: black;
 }
 
 * a:visited {
@@ -29,10 +32,9 @@ img {
   display: inline;
   z-index: 1;
   position: relative;
-  margin: 0;
   overflow: hidden;
   padding: 0;
-  position: absolute;
+  position: fixed;
   background-color: rgb(255, 255, 255);
   width: 100%;
 }
@@ -75,7 +77,6 @@ img {
   margin: 0 auto;
   width: 100%;
   height: 50em;
-  background-color: rgb(228, 228, 210);
   position: relative;
   text-align: center;
   color: white;
@@ -240,14 +241,6 @@ img {
   gap: 2px;
 }
 
-/* ul {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-} */
-
 .skill {
   display: flex;
   flex-direction: row;
@@ -331,22 +324,24 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 5em;
+  gap: 2em;
   margin: 0 auto;
 }
 
 .icons {
-  width: 5em;
+  width: 8em;
   display: flex;
   margin: 0 auto;
-  height: 5em;
+  height: 8em;
 }
 .Portfolio a:hover,
 .Portfolio .icons:hover {
   text-decoration: underline;
-  font-size: 1.5em;
+  transition: all 0.65s;
+  transform: rotateY(360deg);
+  /* font-size: 1.5em;
   width: 5.15em;
-  height: 5.15em;
+  height: 5.15em; */
 }
 
 .area5 {
@@ -373,12 +368,16 @@ img {
     background-position: center;
   }
 
+  .content-animation-div h2 {
+    font-size: 12.5vw;
+  }
   .area1-backgroundbox {
     justify-content: center;
     background-position: 70%;
     margin: 0 auto 0;
     width: 100vw;
   }
+
   .MyStory {
     display: flex;
     flex-direction: column;
@@ -395,23 +394,27 @@ img {
   .Navigation {
     display: block;
     z-index: 1;
-    min-height: 2em;
-    min-width: max-content;
-    min-width: 100vw;
+    font-size: 5vw;
     padding: 0;
+    min-width: 100vw;
   }
 
   .Navigation ul {
     padding: 0;
-    width: 100%;
+
     display: flex;
     flex-direction: column;
-    font-size: 1.25em;
   }
 
   .Navigation li {
     text-align: center;
+    margin: 0;
     justify-content: center;
+  }
+
+  .menu-btn {
+    position: relative;
+    height: 1em;
   }
 
   .menu-list-items {
@@ -419,25 +422,28 @@ img {
     visibility: hidden;
     float: zero;
     transition: all 0.5s ease;
-
+    color: black;
     padding: 0;
-    font-size: 1.5em;
+
+    font-size: 3.5vw;
   }
 
   .menu-list-items-active {
     display: flex;
     visibility: visible;
+    color: black;
     flex-direction: column;
     flex-wrap: wrap;
     transform: translate(0);
     float: zero;
     overflow: visible;
     padding: 0;
-    font-size: 1.5em;
+    font-size: 3.5vw;
   }
   .menu-list-items-active li {
     box-sizing: border-box;
     margin: 0 auto;
+    color: black;
   }
 
   .menu-list-items-active li:hover {
@@ -507,7 +513,7 @@ img {
   .Portfolio .icons:hover {
     text-decoration: underline;
   }
-  
+
   /* .skill p {
     display: block;
     white-space: nowrap;
@@ -555,8 +561,6 @@ img {
   }
 
   .Mystorytext {
-    /* text-indent: 2vw;
-    margin: 0 auto; */
     font-size: 4.5vw;
     inline-size: 80vw;
     overflow-wrap: break-word;

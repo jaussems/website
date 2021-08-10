@@ -3,7 +3,7 @@ import React from "react";
 function Skills() {
   return (
     <div className="Skills">
-      <h1>Skills</h1>
+      <h1 style={{ marginTop: "2em" }}>Skills</h1>
       <div>
         <ul className="skills-list">
           <div className="skillspt1">

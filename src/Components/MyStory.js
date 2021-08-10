@@ -3,18 +3,17 @@ import localpicture from "../Jannes1.jpg";
 function MyStory() {
   return (
     <div className="MyStory">
-      {/* <div className="Mystorybox"> */}
       <div className="Mystoryimage">
         <img className="secondImg" src={localpicture} alt="picture of me " />
       </div>
-      {/* <div className="storygap"></div> */}
+
       <div className="Mystorytext">
-        <h1> My story </h1>
+        <h1 style={{ marginTop: "1em" }}> My story </h1>
         <p>
           My name is Jannes I am 24 years old and currently live in Purmerend.
-          As a young boy I was always busy with computers, being a little bit of
-          a nerd / geek in my earlier years i discovered that PC and IT in
-          general facinate me.
+          As a young boy I was always busy with computers, started gaming and
+          fixing / reparing computers a lot in my earlier years, I discovered at
+          a young age that PC and IT in general fascinate me.
         </p>
 
         <p>
@@ -27,12 +26,12 @@ function MyStory() {
 
         <p>
           I signed up for the Codaisseur Full Stack Bootcamp this year to fulfil
-          my dream, after 11 intensive weeks of grueling tasks and assesment I
-          managed to overcome obstacles and suceed allong side my peers. I know
-          certain technologies you can see listed below and I battled it out
-          with imposter-syndrome. I can now call myself a developer even though
-          there is much to learn. I keep learning I keep growing, a little bit
-          better each day is still a little bit.
+          my dream, after 11 intensive weeks of building awesome webbaps and
+          completing assessments I managed to overcome obstacles and suceed
+          along side my peers. I know certain technologies you can see listed
+          below. Eventhoug now I can call myself a developer ,there still much
+          to learn learn. My mission is continuous learning, I keep learning, I
+          keep growing, a little bit better each day is still a little bit!
         </p>
 
         <div className="MyStorybadges">
@@ -44,7 +43,7 @@ function MyStory() {
               src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg"
             />
           </a>
-          {/* <div className="gapbtwnbadges"></div> */}
+
           <a href="https://github.com/jaussems">
             <img
               align="left"
@@ -54,13 +53,12 @@ function MyStory() {
               alt="github logo"
             />
           </a>
-          {/* <div className="gapbtwnbadges"></div> */}
-          <a href="https://docdro.id/5k68sLY">
+
+          <a href="https://docdro.id/LHkTU08">
             <button className="dwnldbtn">Download CV</button>
           </a>
         </div>
       </div>
-      {/* </div> */}
     </div>
   );
 }

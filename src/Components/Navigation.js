@@ -11,6 +11,18 @@ function Navigation() {
       setBtnClass("menu-list-items");
     }
   }
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute("href")).scrollIntoView({
+        behavior: "smooth",
+        block: "end",
+        inline: "nearest",
+      });
+    });
+  });
+
   return (
     <div className="Navigation">
       <nav>

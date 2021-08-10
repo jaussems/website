@@ -3,7 +3,7 @@ import React from "react";
 function Portfolio() {
   return (
     <div className="Portfolio">
-      <h2>My portfolio</h2>
+      <h2 style={{ marginTop: "2.5em" }}>My portfolio</h2>
       <div>
         <a href="https://see-crypto-app.netlify.app/">
           <img
