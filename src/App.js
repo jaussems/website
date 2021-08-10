@@ -32,10 +32,10 @@ function App() {
               <div className="text-container">
                 <p className="content-container-text">I am a</p>
                 <div className="content-animation-div">
-                  <h2 class="content-list-item">programmer </h2>
-                  <h2 class="content-list-item">creator </h2>
-                  <h2 class="content-list-item">energy </h2>
-                  <h2 class="content-list-item">personality </h2>
+                  <h2 className="content-list-item">programmer </h2>
+                  <h2 className="content-list-item">creator </h2>
+                  <h2 className="content-list-item">energy </h2>
+                  <h2 className="content-list-item">personality </h2>
                 </div>
               </div>
             </div>
