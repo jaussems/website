@@ -395,7 +395,7 @@ img {
     display: block;
     z-index: 1;
     font-size: 5vw;
-    padding: 0;
+
     min-width: 100vw;
   }
 
@@ -404,12 +404,14 @@ img {
 
     display: flex;
     flex-direction: column;
+    transition: all 0.3s ease;
   }
 
   .Navigation li {
     text-align: center;
     margin: 0;
     justify-content: center;
+    transition: all 0.3s ease;
   }
 
   .menu-btn {
@@ -421,10 +423,8 @@ img {
     display: none;
     visibility: hidden;
     float: zero;
-    transition: all 0.5s ease;
     color: black;
     padding: 0;
-
     font-size: 3.5vw;
   }
 
@@ -434,18 +434,22 @@ img {
     color: black;
     flex-direction: column;
     flex-wrap: wrap;
-    transform: translate(0);
     float: zero;
     overflow: visible;
     padding: 0;
     font-size: 3.5vw;
+    transition: all 0.3s ease;
   }
   .menu-list-items-active li {
     box-sizing: border-box;
     margin: 0 auto;
+
     color: black;
   }
 
+  .menu-list-items-active li li {
+    transition: all 0.3s ease;
+  }
   .menu-list-items-active li:hover {
     background-color: azure;
   }
@@ -471,6 +475,7 @@ img {
   .Navigation li {
     color: white;
     padding: 14px 16px;
+    transition: all 4.2s;
     text-decoration: none;
     font-size: 17px;
     display: block;
@@ -485,8 +490,14 @@ img {
   .Mystorytext {
     inline-size: 320px;
     position: relative;
+    white-space: pre-wrap;
+    text-indent: 1em;
+    text-align: center;
   }
 
+  .Mystorytext-divide-read {
+    display: none;
+  }
   .Skills {
     display: block;
     height: auto;
@@ -501,12 +512,11 @@ img {
   }
 
   .skill p {
-    display: block;
-    margin: 1em;
-    justify-self: left;
+    /* margin: 1em; */
+
     white-space: nowrap;
     text-overflow: ellipsis;
-    overflow: hidden;
+    overflow: hide;
   }
 
   .Portfolio a:hover,
@@ -570,62 +580,3 @@ img {
     height: auto;
   }
 }
-
-/* @media (min-width: 300px) {
-  body {
-    margin: 0;
-    padding: 0;
-    font-size: 2rem;
-    min-height: 100vh;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-  .area1 {
-    display: flex;
-    background: cyan;
-    width: 102vh;
-  }
-} */
-
-/* @media only screen and (min-width: 720px) {
-  html {
-    width: 100%;
-  }
-
-  body {
-    font-size: 2.5vw;
-    overflow-y: scroll;
-    overflow-x: unset;
-    margin: 0 auto;
-    padding: 0;
-    white-space: nowrap;
-  }
-  .area1 {
-    width: 100%;
-    background-position: center;
-  }
-
-  .area1-backgroundbox {
-    justify-content: center;
-    background-position: 70%;
-    margin: 0 auto 0;
-
-    width: 100%;
-  }
-  .MyStory {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: auto;
-  }
-  .Mystorytext {
-    padding-top: 2em;
-    text-overflow: ellipsis;
-    text-align: center;
-    white-space: pre-line;
-  }
-} */

@@ -12,14 +12,14 @@ function MyStory() {
         <p>
           My name is Jannes I am 24 years old and currently live in Purmerend.
           As a young boy I was always busy with computers, started gaming and
-          fixing / reparing computers a lot in my earlier years, I discovered at
-          a young age that PC and IT in general fascinate me.
+          fixing / repairing computers a lot in my earlier years, I discovered
+          at a young age that PC and IT in general fascinate me.
         </p>
 
         <p>
-          After trying multiple different things throughout my life, for example
-          becoming a social worker, I realized I had to follow my true
-          ambitions: to become a programmer. To do this was going to be a though
+          After trying multiple different things throughout my life, for
+          example: becoming a social worker, I realized I had to follow my true
+          ambitions: to become a programmer. To do this was going to be a tough
           challenge, one does not simply become one overnight, one does through
           working hard and to keep learning.{" "}
         </p>
@@ -27,11 +27,15 @@ function MyStory() {
         <p>
           I signed up for the Codaisseur Full Stack Bootcamp this year to fulfil
           my dream, after 11 intensive weeks of building awesome webbaps and
-          completing assessments I managed to overcome obstacles and suceed
+          completing assessments I managed to overcome obstacles and succeed
           along side my peers. I know certain technologies you can see listed
-          below. Eventhoug now I can call myself a developer ,there still much
-          to learn learn. My mission is continuous learning, I keep learning, I
-          keep growing, a little bit better each day is still a little bit!
+          below.{" "}
+        </p>
+
+        <p>
+          Although I can call myself a developer now,there still much to learn
+          learn. My mission is continuous learning, I keep learning, I keep
+          growing, a little bit better each day is still a little bit!
         </p>
 
         <div className="MyStorybadges">
