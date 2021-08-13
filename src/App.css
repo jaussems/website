@@ -81,7 +81,7 @@ img {
   text-align: center;
   color: white;
 }
-
+/* 
 .area1-backgroundbox {
   z-index: 1;
   left: 0;
@@ -92,6 +92,14 @@ img {
   width: 80%;
   height: 80%;
   position: absolute;
+} */
+
+.area1-backgroundbox {
+  height: 80%;
+  background: center / contain no-repeat url("./JWTImg1.jpg");
+  background-position-y: -0.25vw;
+  margin-top: 5vw;
+  background-size: 80%;
 }
 
 .content {
@@ -133,7 +141,6 @@ img {
   margin-left: -25em;
 }
 .Mystorytext {
-  /* inline-size: 44rem; */
   inline-size: 40vw;
   overflow-wrap: break-word;
 }
@@ -370,10 +377,11 @@ img {
   }
 
   .content-animation-div h2 {
+    inline-size: 100%;
     font-size: 12.5vw;
   }
   .area1-backgroundbox {
-    justify-content: center;
+    background-size: cover;
     background-position: 70%;
     margin: 0 auto 0;
     width: 100vw;
@@ -560,6 +568,7 @@ img {
 
   .area1-backgroundbox {
     justify-content: center;
+    background-size: cover;
     background-position: 70%;
     margin: 0 auto 0;
     width: 100%;

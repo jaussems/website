@@ -7,11 +7,6 @@ import Contact from "./Components/Contact";
 import Portfolio from "./Components/My-Portfolio";
 import Skills from "./Components/Skills";
 function App() {
-  //   <img
-  //   className="backgroundImg"
-  //   src={backgroundimg}
-  //   alt="image showing me and one of my hobbies"
-  // />
   function Smooth() {
     window.scroll({ top: 0, left: 0, behavior: "smooth" });
 
@@ -30,7 +25,7 @@ function App() {
           <div className="content">
             <div className="content-container">
               <div className="text-container">
-                <p className="content-container-text">I am a</p>
+                <p className="content-container-text">I am a(n)</p>
                 <div className="content-animation-div">
                   <h2 className="content-list-item">programmer </h2>
                   <h2 className="content-list-item">creator </h2>

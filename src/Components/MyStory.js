@@ -4,11 +4,11 @@ function MyStory() {
   return (
     <div className="MyStory">
       <div className="Mystoryimage">
-        <img className="secondImg" src={localpicture} alt="picture of me " />
+        <img className="secondImg" src={localpicture} alt="picture of me" />
       </div>
 
       <div className="Mystorytext">
-        <h1 style={{ marginTop: "1em" }}> My story </h1>
+        <h1 style={{ marginTop: "4vw" }}> My story </h1>
         <p>
           My name is Jannes I am 24 years old and currently live in Purmerend.
           As a young boy I was always busy with computers, started gaming and
