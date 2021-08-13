@@ -33,9 +33,9 @@ function MyStory() {
         </p>
 
         <p>
-          Although I can call myself a developer now,there still much to learn
-          learn. My mission is continuous learning, I keep learning, I keep
-          growing, a little bit better each day is still a little bit!
+          Although I can call myself a developer now,there still much to learn.
+          My mission is continuous learning, I keep learning, I keep growing, a
+          little bit better each day is still a little bit!
         </p>
 
         <div className="MyStorybadges">
